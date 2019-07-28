@@ -1,6 +1,8 @@
-var burgerImg = "./images/burger.png";
 
 
+
+
+// on click event to change burger status from devoured false to true
 $(function() {
     $(".eatBurger").on("click", function(event) {
         var id = $(this).data("burgersid");
@@ -19,6 +21,7 @@ $(function() {
         ); 
     });
 
+    // submit form function to add new burger to the database
 $(".create-form").on("submit", function(event) {
     event.preventDefault();
 

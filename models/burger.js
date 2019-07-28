@@ -1,7 +1,8 @@
 
-
+// require orm
 var orm = require("../config/orm");
 
+// build out burger model to be able to crud
 var Burger = {
     all: function(cb) {
         orm.all("Burgers", function(res) {
@@ -26,4 +27,5 @@ var Burger = {
     }
 };
 
+// export model for use
 module.exports = Burger;

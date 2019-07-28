@@ -1,9 +1,13 @@
+// variable for express
 var express = require("express");
 
+// router variable
 var router = express.Router();
 
+// burger model variable
 var burger = require("../models/burger");
 
+// establishing route to homepage
 router.get("/", function(req, res) {
     burger.all(function(data) {
         var hbsObject = {
@@ -14,6 +18,7 @@ router.get("/", function(req, res) {
     });
 });
 
+// establishing and posting to api
 router.post("/api/burgers", function(req, res) {
     burger.create([
         "name", "devoured"
@@ -24,6 +29,7 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
+// updating burger if needed
 router.put("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
@@ -42,6 +48,7 @@ router.put("/api/burgers/:id", function(req, res) {
 });
 
 
+// deleting burgers if needed
 router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
 
@@ -55,4 +62,5 @@ router.delete("/api/burgers/:id", function(req, res) {
 })
 
 
+// making routes available to other files
 module.exports = router;
