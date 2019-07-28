@@ -1,3 +1,37 @@
+h1 {
+  font-size: 64px;
+}
+
+
+.burger {
+  position: absolute;
+  top: 50px;
+}
+
+.one {
+  right: 0;
+}
+
+.two {
+  right: 115px;
+}
+
+.three {
+  right: 240px;
+}
+
+.four {
+  right: 363px;
+}
+
+.five {
+  right: 487px;
+}
+
+.six {
+  right: 613px;
+}
+
 li {
   padding: 5px;
   margin: 5px;
