@@ -1,3 +1,6 @@
+var burgerImg = "./images/burger.png";
+
+
 $(function() {
     $(".eatBurger").on("click", function(event) {
         var id = $(this).data("burgersid");

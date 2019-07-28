@@ -1,11 +1,14 @@
+
 <h1>Burgers!</h1>
+
+<img src="hamburger.png" class="burger" alt="hamburger" />
 
 <h2>Burgers Ready to be Devoured!</h2>
 
 <ul>
     {{#each burgers}}
         {{#unless devoured}}
-    <li>
+    <li class="notEaten">
       <p>
           {{this.name}}
           <button data-burgersid="{{this.id}}" class="eatBurger">Devour Burger!</button>
@@ -20,7 +23,7 @@
 <ul>
     {{#each burgers}}
                 {{#if devoured}}
-        <li>
+        <li class="eaten">
             <p>
                     {{this.name}}
             </p>

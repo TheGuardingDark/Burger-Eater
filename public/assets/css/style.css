@@ -1,17 +1,25 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+}
+
+.notEaten {
+  background: #fdf498
+}
+
+.eaten {
+  background: #f37736;
 }
 
 .label {
   font-weight: bold;
 }
 
-.create-update-form {
+.create-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: #0392cf;
+  margin-left: 44px;
 }
 
 .form-group {
