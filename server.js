@@ -1,8 +1,7 @@
 
 // Require Express package
 var express = require("express");
-var bodyParser = require('body-parser');
-var mysql = require("mysql");
+
 // Specify port to use
 var PORT = process.env.PORT || 8080;
 
