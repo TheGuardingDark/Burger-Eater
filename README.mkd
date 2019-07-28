@@ -1,1 +1,18 @@
-Full-Stack homework assignment using handlebars and mysql
+# A Burger Eating MVC :hamburger:
+## Full-stack homework app using express, handlebars, and mysql
+### node/express/handlebars/orm/mysql
+
+DEPLOYED PROJECT
+==============================
+Follow this link to eat some burgers:
+https://rocky-sands-51641.herokuapp.com/
+
+APP FUNCTIONALITY
+=====================
+
+### HOME :house: 
+-- Once on the homepage, the user will be shown a list of burgers in the database that have not been eaten and a list of burgers that have been eaten. The user may click on the 'Devour Burger' button to eat the burger and send it into the eaten section. A simple form near the bottom of the page will allow users to add a burger of their choice to the database. It will appear in the list of burgers that have not yet been eaten and give the user the option to devour it.
+
+
+### Burger API :cow2:
+-- The Burger API presents all data in the database in JSON format by following the path "/api/burgers". Any burgers that have not been eaten will have a ) next to devoured for false and any that have been devoured will have a 1 for true.
