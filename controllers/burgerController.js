@@ -5,7 +5,7 @@ var express = require("express");
 var router = express.Router();
 
 // burger model variable
-var burger = require("../models/burger");
+var burger = require("../models/burger.js");
 
 // establishing route to homepage
 router.get("/", function(req, res) {
