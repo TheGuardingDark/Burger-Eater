@@ -18,6 +18,13 @@ router.get("/", function(req, res) {
     });
 });
 
+// visual json representation of api
+router.get("/api/burgers", function(req, res) {
+    burger.all(function(data) {
+        res.json(data)
+    });
+});
+
 // establishing and posting to api
 router.post("/api/burgers", function(req, res) {
     burger.create([
