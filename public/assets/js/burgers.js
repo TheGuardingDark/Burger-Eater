@@ -30,6 +30,8 @@ $(".create-form").on("submit", function(event) {
         devoured: 0
     };
 
+    $("#burg").val("");
+
     $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
