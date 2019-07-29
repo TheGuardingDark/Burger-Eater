@@ -5,7 +5,7 @@
 DEPLOYED PROJECT
 ==============================
 Follow this link to eat some burgers:
-https://rocky-sands-51641.herokuapp.com/
+https://still-plains-86854.herokuapp.com/
 
 APP FUNCTIONALITY
 =====================
