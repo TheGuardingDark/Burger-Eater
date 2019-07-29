@@ -5,23 +5,23 @@ var orm = require("../config/orm");
 // build out burger model to be able to crud
 var Burger = {
     all: function(cb) {
-        orm.all("Burgers", function(res) {
+        orm.all("burgers", function(res) {
             cb(res);
         });
     },
 
-    create: function(cols, vals, cb) { orm.create("Burgers", cols, vals, function(res) {
+    create: function(cols, vals, cb) { orm.create("burgers", cols, vals, function(res) {
         cb(res);
     });
 },
     update: function(objColVals, condition, cb) {
-        orm.update("Burgers", objColVals, condition, function(res) {
+        orm.update("burgers", objColVals, condition, function(res) {
             cb(res);
         });
     },
 
     delete: function(condition, cb) {
-        orm.delete("Burgers", condition, function(res) {
+        orm.delete("burgers", condition, function(res) {
             cb(res);
         });
     }
